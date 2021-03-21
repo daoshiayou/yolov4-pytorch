@@ -12,7 +12,8 @@ from yolo import YOLO
 yolo = YOLO()
 
 while True:
-    img = input('Input image filename:')
+    # img = input('Input image filename:')
+    img = '../dataset/val/images/0000001_02999_d_0000005.jpg'
     try:
         image = Image.open(img)
     except:
@@ -21,3 +22,5 @@ while True:
     else:
         r_image = yolo.detect_image(image)
         r_image.show()
+        r_image.save("prediction.jpg")
+        break

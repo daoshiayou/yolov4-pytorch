@@ -162,7 +162,7 @@ if __name__ == "__main__":
     #   显存比较小可以使用416x416
     #   显存比较大可以使用608x608
     #-------------------------------#
-    input_shape = (416, 416)
+    input_shape = (608, 608)
 
     #----------------------------------------------------#
     #   classes和anchor的路径，非常重要
@@ -197,7 +197,8 @@ if __name__ == "__main__":
     #------------------------------------------------------#
     #   权值文件请看README，百度网盘下载
     #------------------------------------------------------#
-    model_path = "model_data/yolo4_weights.pth"
+    # model_path = "model_data/yolo4_weights.pth"
+    model_path = "model_data/yolo4_voc_weights.pth"
     print('Loading weights into state dict...')
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model_dict = model.state_dict()

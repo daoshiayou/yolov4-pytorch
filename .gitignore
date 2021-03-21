@@ -1,2 +1,9 @@
-VOCdevkit
+__pycache__
+VOCdevkit/VOC2007
 *.pth
+*.zip
+null
+2007_test.txt
+2007_train.txt
+2007_val.txt
+prediction.jpg
